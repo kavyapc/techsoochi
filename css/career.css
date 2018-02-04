@@ -1,0 +1,41 @@
+table {
+    border: solid 3px;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #0e90d2;
+    color: white;
+}
+ .center {
+     margin-top:50px;
+     background: red;
+     background-color: #b9def0;
+ }
+
+.modal-header {
+    padding-bottom: 5px;
+}
+
+.modal-footer {
+    padding: 0;
+}
+
+.modal-footer .btn-group button {
+    height:40px;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border: none;
+    border-right: 1px solid #ddd;
+}
+
+.modal-footer .btn-group:last-child > button {
+    border-right: 0;
+}
