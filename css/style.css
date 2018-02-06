@@ -365,7 +365,7 @@ ul#menu-main > li > a:focus {
 	margin: 0.5em 0;
 	text-shadow: 1px 1px 1px #333333;
 }
-
+/*
 header .logo {
 	text-align:center;
 	margin-bottom:30px;
@@ -373,14 +373,17 @@ header .logo {
 
 /* --- Header slider --- */
 #header-wrapper.header-slider {
-	background: #444 url(../img/bg/bricks.jpg) no-repeat center center fixed;
+	background: #444 url(../img/bg/1.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	background-size:1576px 595px; 
+	width: 1576px;
+	height: 595px;
 	background-size: cover;
 }
 
-#main-flexslider ul.slides li p {
+/*#main-flexslider ul.slides li p {
 	font-size: 72px;
 	text-transform: uppercase;
 	position: relative;

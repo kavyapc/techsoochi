@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/cntct.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="color/default.css" rel="stylesheet">
+    <!--<link rel="shortcut icon" href="img/favicon-16x16.png">-->
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar-wrapper">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- Responsive navbar -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </a>
+                <h1 class="brand"><a href="index.html">Techsoochi</a></h1>
+                <!-- navigation -->
+                <nav class="pull-right nav-collapse collapse">
+                    <ul id="menu-main" class="nav">
+                        <li><a title="About" href="index.html">About</a></li>
+                        <li><a title="Services" title="team" href="service.html">Services</a></li>
+                        <li><a title="courses"href="course.html">courses</a></li>
+                        <li><a title="careers"href="careers.html">careers</a></li>
+                        <li><a title="contact" href="contact.html">contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- end spacer section -->
+    <!-- section: contact -->
+    <section id="contact" class="section green">
+        <div class="container">
+            <h4>Get in Touch</h4>
+
+            <a id="map-btn2" class="btn btn-skin btn-lg btn-noradius gmap-btn close-map-button btn-hide" href="#map" title="Close google map" data-toggle="tooltip" data-placement="top">
+                795 Folsom Ave, Suite 600 San Francisco, CA 94107
+            </a>
+
+            <!-- google map -->
+            <section id="map" class="close-map">
+                <div id="google-map"></div>
+            </section>
+            <div class="blankdivider30">
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="cform" id="contact-form">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm" onsubmit="return checkForm(this);">
+                            <div class="row">
+                                <div class="span6">
+                                    <div class="field your-name form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" ><!--data-msg="Please enter at least 4 chars"-->
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field your-phone Number form-group">
+                                        <input type="text" name="phoneno" class="form-control" id="phoneno1" maxlength="10" placeholder="Your phone Number" data-rule="minlen:4"> <!--data-msg="Please enter 10 digit number" -->
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field your-email form-group">
+                                        <input type="text" class="form-control" name="email" id="email1" placeholder="Your Email" data-rule="email"> <!--data-msg="Please enter a valid email" -->
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field subject form-group">
+                                        <input type="text" class="form-control" name="subject" id="subject1" placeholder="Subject" data-rule="minlen:4"> <!--data-msg="Please enter at least 8 chars of subject"-->
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field message form-group">
+                                        <textarea class="form-control" name="message" rows="5" data-rule="required"  placeholder="Message" ></textarea>
+                                        <div class="validation"></div>
+
+                                    </div>
+                                    <input type="submit" value="Send message" class="btn btn-theme pull-left">
+                                </div>
+                                <center class="span6">
+
+                                    <p align="center" style="font-family: inter ui">Address:
+                                           First Copy Technologies 
+                                        No.13,Serpentine Rd,<br>
+                                        Sripuram,Kumara park West,Sheshadripuram<br>
+                                        Bangalore<br>
+                                        Karnataka Pin: 560020<br>
+                                
+
+                                        Call: +91 9620557722<br>
+                                        E-mail:techsoochi@outlook.com </p>
+                                    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6728313358367!2d77.57619451437552!3d12.992765390842028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae163c3b2fcf7b%3A0x29e4aa7f5e7bc75a!2sFirst+Copy+Technologies!5e0!3m2!1sen!2sin!4v1517916115093" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </center>
+
+                                    <!--</div>-->
+                            </div>
+                        </form>
+                        <script type="text/javascript">
+                            function checkForm(form) {
+                                if (form.name.value == "")
+                                {
+
+                                    alert("Error: name cannot be blank!");
+                                    form.name.focus();
+                                    return false;
+                                }
+                                re=/^([a-zA-Z])/;
+                                if(!re.test(form.name.value))
+                                {
+                                    alert("enter only alphabets");
+                                    form.name.focus();
+                                    return false;
+                                }
+
+                                if(form.phoneno.value =="")
+                                {
+                                    alert("Error: Mobile no  cannot be blank!");
+                                    form.phoneno.focus();
+                                    return false;
+                                }
+                                re=/^([0-9])/;
+                                if(!re.test(form.phoneno.value))
+                                {
+                                    alert("enter only numbers");
+                                    form.phoneno.focus();
+                                    return false;
+                                }
+
+                                if(form.phoneno.value.length!=10){
+                                    alert("Enter the valid mobile number ");
+                                    form.phoneno.focus();
+                                    return false;
+                                }
+                                if(form.phoneno.value.length>10){
+                                    alert("Enter the valid mobile number ");
+                                    form.phoneno.focus();
+                                    return false;
+                                }
+                                if(form.phoneno.value.length<10){
+                                    alert("Enter the valid mobile number ");
+                                    form.phoneno.focus();
+                                    return false;
+                                }
+
+                                    if(form.email.value == "") {
+                                        alert("Error: Username cannot be blank!");
+                                        form.email.focus();
+                                        return false;
+                                    }
+                                    re =  /^([^0-9])+([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+                                    if(!re.test(form.email.value)) {
+                                        alert("Error: Enter the valid email");
+                                        form.email.focus();
+                                        return false;
+                                    }
+                                if (form.subject.value == "")
+                                {
+                                    alert("Please enter the subject.");
+
+                                    form.subject.focus();
+                                    return false;
+                                }
+                                if(form.subject.value.length<10){
+                                    alert("subject can not be less than 10 ");
+                                    form.subject.focus();
+                                    return false;
+                                }
+
+                                if (form.message.value == "")
+                                {
+                                    alert("Please enter the Message.");
+
+                                    form.message.focus();
+                                    return false;
+                                }
+                                if(form.message.value.length<10){
+                                    alert("message can not be less than 10 ");
+                                    form.message.focus();
+                                    return false;
+                                }
+                                if (confirm("Do you want to submit the form?")) {
+                                    alert("Registration Form Submitted Successfully.");
+                                }
+                                else
+                                    return false;
+                            }
+
+                        </script>
+                    </div>
+                </div>
+                <!-- ./span12 -->
+            </div>
+        </div>
+    </section>
+<footer style="padding-bottom: 24px;margin-top: 0;padding-top: 0;">
+    <div class="container" style="height: 30px;padding-left: 120px;">
+        <div class="row" style="margin-bottom: 0;">
+            <p style="float: right;padding-top:20px;padding-right: 30px;font-family: inter ui">© 2018 First copy Technologies. All rights reserved.</p>
+            <ul class="social-networks" style="align-content: center;padding-left: 120px; margin-bottom: 0;padding-top: 2px;">
+                <li><a href="http://www.twitter.com"><i class="icon-circled icon-bgdark icon-twitter icon-2x" style="margin-top: 10px;"></i></a></li>
+                <li><a href="http://www.facebook.com"><i class="icon-circled icon-bgdark icon-facebook icon-2x"></i></a></li>
+                <li><a href="http://www.linkedin.com"><i class="icon-circled icon-bgdark icon-linkedin icon-2x"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ./container -->
+</footer>
+    <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/inview.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+</body>
+</html>
