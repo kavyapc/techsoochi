@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('img/bg/1.png');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('img/crm.jpg');
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url('img/crm.jpg');
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="5">
+<!-- navbar -->
+<div class="navbar-wrapper">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- Responsive navbar -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </a>
+                <h1 class="brand"><a href="index.html">Techsoochi</a></h1>
+                <!-- navigation -->
+            <nav class="pull-right nav-collapse collapse">
+                <ul id="menu-main" class="nav">
+                    <li style="font-family: inter ui"><a title="Home" href="index2.html">Home</a></li>
+                <li style="font-family: inter ui"><a title="Aboutus" href="About us.html">About us</a></li>
+                              <li style="font-family: inter ui" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Services.html">Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Training.html">Training </a></li>
+          <li><a href="Consulting.html"> Consulting </a></li>
+   
+        </ul>
+      </li>
+                    <li style="font-family: inter ui"><a title="Testimonials" href="Testimonials.html">Testimonials</a></li>
+                    <li style="font-family: inter ui"><a title="careers" href="careers.html">Careers</a></li>
+                    <li style="font-family: inter ui"><a title="contact" href="contact.html">Contact us</a></li>
+                        <li style="font-family: inter ui"><a title="Events" href="Events.html">Events</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar" style="text-align: right;">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+   <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>-->
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">WHY CHOOSE US</h3>
+  <p class="w3-center"><em></em></p>
+                                 <p>Techsoochi is an initiative situated in Bangalore, we provide training services on Microsoft Dynamics CRM/AX/NAV products which incorporate both technical and functional modules furthermore different advances which have high market request and esteem. We provide courses on a talent sharing premise at a very competitive price like never before in the Indian market.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+     <!-- <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>-->
+      <img src="img/bg/1.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+       <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-align: center; padding-right: 70px;">
+                                                    Expert Research
+                                                </a>
+                                            </h4>
+                                          </div>
+                                            <h4 class="panel-title">
+                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                      Hi-Tech Engineering
+                                                </a>
+                                            </h4>
+                                            <h4 class="panel-title">
+                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                      Outstanding Results
+                                                </a>
+                                            </h4>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center" style="font-weight: bold;">Cources</h3>
+ <p class="w3-center"><em>Techsoochi provides candidates the right oppurtunity to shape up their career with excellent trainig in various technologies.<br></em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+    
+      <img src='img/crm.jpg' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Microsoft Dynamics CRM">
+          <h3>Microsoft Dynamics CRM</h3>
+                                         <p style="text-align: justify;">The Microsoft Dynamics CRM content pack for Power BI allows you to easily access and analyze your data. The content pack uses the OData feed to create a descriptive model, with all the entities and measures neededs.</p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src='img/crm.jpg' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Microsoft Dynamics AX">
+                                        <h3>Microsoft Dynamics AX</h3>
+                                    <p class="color-white margin-b-5">Microsoft Dynamics AX is an enterprise resource planning (ERP) solution that is simple to learn and use so you can deliver value faster, take advantage of business opportunities, and drive user involvement and innovation across the organisation.
+</p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src='img/crm.jpg'style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Microsoft Azure">
+                                          <h3>Microsoft Azure</h3>
+                                    <p class="margin-b-5">Cloud computing has been labeled the next big thing in the computing industry, What are the benefits of cloud computing? Why would my organization and I want to explore cloud computing? Of what potential issues should we be aware?.</p>
+    </div>
+
+   <!-- <div class="w3-col m3">
+      <img src='img/crm.jpg'style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>-->
+  </div>
+<br><br>
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <img src='img/crm.jpg' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Microsoft Dynamics NAV">
+                  <h3>Microsoft Dynamics NAV</h3>
+                                    <p class="margin-b-5">Microsoft Dynamics NAV is a global enterprise resource planning (ERP) solution that provides small and midsize businesses greater control over their financials and can simplify their supply chain, manufacturing, and operations.</p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src='img/crm.jpg'style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Power BI">
+                            <h3>Power BI</h3>
+                                    <p class="margin-b-5">Power BI introduces key concept in business intelligence, data analysis, and data visualization & they will learn the rationale for self-service BI, considerations for using self-service BI, and how Microsoft products can be used to implement a self-service BI solution.</p>
+
+    </div>
+
+    <div class="w3-col m4">
+      <img src='img/crm.jpg'style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Share Point">
+                            <h3>Share Point</h3>
+                                    <p class="margin-b-5">Digital marketing is an umbrella term for the targeted, measurable, and interactive marketing of products or services using digital technologies to reach and convert leads into customers and retain them.</p>
+    </div>
+
+   <!-- <div class="w3-col m3">
+      <img src='img/crm.jpg' style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>-->
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Contact us</h3>
+  <p class="w3-center"><em></em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+        <center><iframe style="padding-right:250px;float: left;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6728313358367!2d77.57619451437552!3d12.992765390842028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae163c3b2fcf7b%3A0x29e4aa7f5e7bc75a!2sFirst+Copy+Technologies!5e0!3m2!1sen!2sin!4v1517916115093" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+    <!--  <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>-->
+
+    </div>
+    <div class="w3-col m8 w3-panel" style="float: right;">
+      <div class="w3-large w3-margin-bottom" style="float: right;">
+        <i  class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i style="float: right;">First Copy Technologies OFFICE
+13, Serpentine Rd, Sripuram, Kumara Park West, Sheshadripuram, Bengaluru, Karnataka 560020
+
+ <br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" ></i> Phone:  +91 9620557722<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: techsoochi@outlook.com<br>
+      </div><br><br>
+      <form action="/action_page.php" target="_blank" style="float: right;">
+        <div class="w3-row-padding" style="margin:0 -1px 1px -1px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">© 2018 First copy Technologies. All rights reserved.</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
